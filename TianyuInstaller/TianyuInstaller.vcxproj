@@ -32,12 +32,12 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>5.12.11</QtInstall>
-    <QtModules>core;network;gui;testlib;widgets;</QtModules>
+    <QtModules>core;network;gui;testlib;widgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
     <QtInstall>5.12.11</QtInstall>
-    <QtModules>core;network;gui;testlib;widgets;</QtModules>
+    <QtModules>core;network;gui;testlib;widgets</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -67,7 +67,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -89,12 +89,16 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="UI\SideWidget.h" />
     <QtMoc Include="Base\AndroidAPI.h" />
     <QtMoc Include="Base\BaseAPI.h" />
     <ClInclude Include="Base\Exception.h" />
     <ClInclude Include="Base\Macro.h" />
     <ClInclude Include="UI\Launch\LaunchWidget.h" />
     <QtMoc Include="UI\MainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\StyleSheet.qss" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -51,5 +51,11 @@
     <QtMoc Include="Base\BaseAPI.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="UI\SideWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\StyleSheet.qss" />
   </ItemGroup>
 </Project>

@@ -2,13 +2,14 @@
 #include "Macro.h"
 
 namespace TianyuAPI {
-	class TianyuException :public QException
+	class Exception 
 	{
-		Public void raise() const {
-			throw *this;
+		Private QString DATA;
+		Public Exception(QString Data) {
+			DATA = Data;
 		}
-		Public TianyuException *clone() const {
-			return new TianyuException(*this);
+		QString what() const noexcept {
+			return DATA;
 		}
 	};
 }

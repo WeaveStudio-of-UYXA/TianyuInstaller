@@ -4,7 +4,7 @@
 #include <QtWidgets>
 #include <QtNetwork>
 #include <QTest>
-#include <QException>
+#include <exception>
 
 #ifndef TRUE
 #define TRUE true
