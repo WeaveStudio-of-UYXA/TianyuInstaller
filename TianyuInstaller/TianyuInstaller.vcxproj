@@ -92,12 +92,16 @@
     <QtMoc Include="UI\SideWidget.h" />
     <QtMoc Include="Base\AndroidAPI.h" />
     <QtMoc Include="Base\BaseAPI.h" />
-    <ClInclude Include="Base\Exception.h" />
+    <QtMoc Include="Base\Exception.h" />
     <ClInclude Include="Base\Macro.h" />
     <ClInclude Include="UI\Launch\LaunchWidget.h" />
     <QtMoc Include="UI\MainWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="PyTools\InvertColor\trans.py" />
+    <None Include="PyTools\QtCreatorSynchro\trans.py" />
+    <None Include="QtCreatorProject\TianyuInstallerAndroid.pro" />
+    <None Include="QtCreatorProject\TianyuInstallerAndroid.pro.user" />
     <None Include="Resource\StyleSheet.qss" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

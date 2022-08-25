@@ -14,11 +14,7 @@ namespace TianyuUI {
 			CurrentLayout = new QVBoxLayout(this);
 
 			HomePageButton = new QRadioButton(this);
-			HomePageButton->setStyleSheet("QRadioButton::indicator{width:0px;height:0px}");
 			CurrentLayout->addWidget(HomePageButton);
-
-
-
 
 		}
 	};

@@ -37,9 +37,6 @@
     <ClInclude Include="Base\Macro.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Base\Exception.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="UI\MainWindow.h">
@@ -54,8 +51,15 @@
     <QtMoc Include="UI\SideWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="Base\Exception.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resource\StyleSheet.qss" />
+    <None Include="QtCreatorProject\TianyuInstallerAndroid.pro" />
+    <None Include="QtCreatorProject\TianyuInstallerAndroid.pro.user" />
+    <None Include="PyTools\InvertColor\trans.py" />
+    <None Include="PyTools\QtCreatorSynchro\trans.py" />
   </ItemGroup>
 </Project>

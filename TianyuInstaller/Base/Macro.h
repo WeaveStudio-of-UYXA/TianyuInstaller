@@ -6,6 +6,9 @@
 #include <QTest>
 #include <exception>
 
+#define WIN_DEPLOY
+//#define ANDROID_DEPLOY
+
 #ifndef TRUE
 #define TRUE true
 #define FALSE false

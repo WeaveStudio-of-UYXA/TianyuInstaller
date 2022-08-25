@@ -12,4 +12,11 @@ namespace TianyuAPI {
 			return DATA;
 		}
 	};
+	class Log :public QObject
+	{
+		Q_OBJECT
+		Public Log() {
+			
+		}
+	};
 }

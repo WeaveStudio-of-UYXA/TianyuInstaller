@@ -1,4 +1,12 @@
-﻿QRadioButton::indicator {
+﻿/*
+	TianyuInstaller Qt Style Sheets File.
+    In this document, we use "%SETTINGS_NAME%" to enable external readers to change all settings with the same name at once.
+*/
+
+QFrame#Title1st {
+    background-color: %BACKGROUND_COLOR%;
+}
+QRadioButton::indicator {
 	width: 0px;
 	height: 0px
 }
