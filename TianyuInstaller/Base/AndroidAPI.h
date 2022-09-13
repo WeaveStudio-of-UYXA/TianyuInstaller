@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "Macro.h"
 
-#if DEPLOT == 2
+#if DEPLOY == 2
 namespace TianyuAPI
 {
 	class Android :public QObject
